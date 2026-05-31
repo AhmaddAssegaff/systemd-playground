@@ -61,6 +61,11 @@ sudo cp etc/systemd/system/hello-world.service /etc/systemd/system/
 sudo cp bin/hello-world /usr/local/bin/hello-world
 ```
 
+### Copy env file
+```bash
+sudo cp /path-to-your-project/.env /etc/default/hello-world
+```
+
 ### Reload daemon
 ```bash
 sudo systemctl daemon-reload
