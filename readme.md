@@ -6,7 +6,6 @@ The goal of this project is not to build a production-ready application, but to 
 * Managing services with `systemctl`
 * Viewing logs with `journalctl`
 * Organizing deployment-related files inside a repository
-* Using symbolic links to register services with systemd
 
 ## Project Structure
 ```text
@@ -78,18 +77,14 @@ sudo systemctl status hello-world
 ```
 
 ## Learning Objectives
-
 After completing this playground, you should understand:
 
 * What a systemd service is
 * How Linux services are started and supervised
 * How automatic restart policies work
 * How to inspect service logs
-* How to package deployment configuration alongside application source code
-* How to use symbolic links to expose service definitions to systemd
 
 ## Next Steps
-
 Possible improvements:
 
 * Environment files (`EnvironmentFile`)
