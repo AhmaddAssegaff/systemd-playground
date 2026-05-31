@@ -155,17 +155,3 @@ Common errors:
 * `Unit not found` → service file not loaded
 
 ---
-
-## Service Lifecycle
-Typical workflow during development:
-```bash
-go build -o bin/hello-world .
-
-sudo systemctl daemon-reload
-
-sudo systemctl restart hello-world
-
-sudo systemctl status hello-world
-
-journalctl -u hello-world -f
-```
