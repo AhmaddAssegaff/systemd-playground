@@ -8,5 +8,7 @@ ExecStart=/usr/local/bin/hello-world
 Restart=on-failure
 DynamicUser=yes
 
+EnvironmentFile=/etc/default/hello-world
+
 [Install]
 WantedBy=multi-user.target
