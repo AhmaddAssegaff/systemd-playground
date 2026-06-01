@@ -7,7 +7,8 @@ Type=simple
 ExecStart=/usr/local/bin/hello-world
 Restart=on-failure
 DynamicUser=yes
-
+KillSignal=SIGTERM
+TimeoutStopSec=90s
 EnvironmentFile=/etc/default/hello-world
 
 [Install]
